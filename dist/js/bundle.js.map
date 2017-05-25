@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["angular","module"],"mappings":";;AAAAA,QAAQC,MAAR,CAAe,QAAf,EAAyB,EAAzB","file":"bundle.js","sourcesContent":["angular.module('noserv', [])"]}
