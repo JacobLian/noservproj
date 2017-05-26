@@ -8,11 +8,9 @@ var gulp = require('gulp')
     , print = require('gulp-print')
     , uglify = require('gulp-uglify')
 
+
 gulp.task('build-css', function(){
-    console.log('hello from inside your computer. we have gulp-off')
-})
-gulp.task('build-css', function(){
-return gulp.src('./styles/*')
+return gulp.src('./styles/*.scss')
 .pipe(sourcemaps.init())
 .pipe(sass())
 .pipe(cachebust.resources())
@@ -22,11 +20,8 @@ return gulp.src('./styles/*')
 
 })
 
-
-
-
 gulp.task('build-js', function() {
-   return gulp.src('js/**/*.js')               
+   return gulp.src('js/*.js')               
       .pipe(sourcemaps.init())
       .pipe(print())                        
       .pipe(babel({ presets: ['es2015'] }))
@@ -43,5 +38,5 @@ gulp.task('build', ['build-css', 'build-js'], function() {
 });
 
 gulp.task('watch', function() {
-    return gulp.watch(['./index.html','./partials/*.html', './styles/*.*css', './js/**/*.js'], ['build']);
+    return gulp.watch(['./index.html', './styles/*.*css', './js/*.js'], ['build']);
 });
