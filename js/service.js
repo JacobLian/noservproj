@@ -2,12 +2,19 @@ angular.module('noserv').service('service', function(){
 
     var data = [
 {
-    species:''
-    
+    species:'',
+    strengths:'',
+    weakness:'',
+    family:'',
+    habitat:''
     
 },
 {
-    species:''
+    species:'',
+    strengths:'',
+    weakness:'',
+    family:'',
+    habitat:''
     
 }
 

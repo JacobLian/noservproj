@@ -21,15 +21,36 @@ angular.module('noserv').controller('ctrl', function ($scope, service) {
   $scope.getData = service.getData();
 });
 "use strict";
+"use strict";
+
+$(document).ready(function () {
+
+    $("#dialog").dialog({
+        autoOpen: false,
+        height: 400,
+        width: 500
+    });
+    $("#opener").click(function () {
+        $("#dialog").dialog("open");
+    });
+});
 'use strict';
 
 angular.module('noserv').service('service', function () {
 
     var data = [{
-        species: ''
+        species: '',
+        strengths: '',
+        weakness: '',
+        family: '',
+        habitat: ''
 
     }, {
-        species: ''
+        species: '',
+        strengths: '',
+        weakness: '',
+        family: '',
+        habitat: ''
 
     }];
 
