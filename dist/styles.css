@@ -24,6 +24,9 @@
   color: black;
   font-size: 25px; }
 
+.rhinoinfo {
+  position: absolute; }
+
 .arena {
   background-image: url("https://source.unsplash.com/MfVTOmc6LcY");
   background-size: cover;
@@ -44,6 +47,14 @@
   justify-content: space-around;
   align-items: flex-end; }
 
+#aImage img {
+  height: 300px;
+  width: 300px; }
+
+#bImage img {
+  height: 300px;
+  width: 300px; }
+
 #photo {
   background-image: url("https://source.unsplash.com/collection/470296/wild-animals");
   background-position: center;
@@ -54,10 +65,12 @@
 #welcome {
   text-align: center;
   font-size: 35px;
-  padding-top: 100px; }
+  padding-top: 55px;
+  color: white; }
 
 h2 {
-  text-align: center; }
+  text-align: center;
+  color: white; }
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
