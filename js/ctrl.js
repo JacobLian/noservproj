@@ -1,5 +1,6 @@
 angular.module('noserv').controller('ctrl', function($scope, service){
 
-$scope.getData = service.getData()
-
-})
+        
+        $scope.data = service.getData()
+        console.log($scope.getData)
+});

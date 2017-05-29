@@ -1,3 +1,6 @@
+body {
+  background-color: black; }
+
 #aniback {
   background-image: url("https://source.unsplash.com/collection/138471/in-thewild");
   background-size: cover;
@@ -5,7 +8,8 @@
   width: 100vw; }
 
 #animals {
-  padding-top: 18vh; }
+  padding-top: 18vh;
+  text-align: center; }
 
 .rhino {
   height: 20vh;
@@ -24,8 +28,39 @@
   color: black;
   font-size: 25px; }
 
-.rhinoinfo {
-  position: absolute; }
+#rhinodialog {
+  position: absolute;
+  display: none;
+  font-size: 20px;
+  background-color: orange;
+  border: 3px solid black;
+  padding: 10px 10px 10px 10px;
+  color: black;
+  border-radius: 10px; }
+
+#rhinodialog h2 {
+  color: black; }
+
+#rhinodialog p {
+  width: 500px;
+  word-wrap: break-word; }
+
+#boardialog {
+  position: absolute;
+  display: none;
+  font-size: 20px;
+  background-color: gray;
+  border: 3px solid black;
+  padding: 10px 10px 10px 10px;
+  color: black;
+  border-radius: 10px; }
+
+#boardialog h2 {
+  color: black; }
+
+#boardialog p {
+  width: 500px;
+  word-wrap: break-word; }
 
 .arena {
   background-image: url("https://source.unsplash.com/MfVTOmc6LcY");
@@ -48,11 +83,11 @@
   align-items: flex-end; }
 
 #aImage img {
-  height: 300px;
+  height: 250px;
   width: 300px; }
 
 #bImage img {
-  height: 300px;
+  height: 250px;
   width: 300px; }
 
 #photo {
@@ -155,6 +190,10 @@ input, select {
 
 *, *:before, *:after {
   box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  width: 100vw; }
 
 nav {
   background-color: #fafffa;
