@@ -2,7 +2,7 @@ angular.module('noserv').service('service', function(){
 
     var data = [
 {
-    'species':'Orrszarvú',
+    'species':'Orszarvú',
     'strengths':'Erőségek: kiváló hallás és szaglás',
     'weakness':'Gyengeségek: viszonzlag gyenge látásúak',
     'family':'Utazás: Főleg magányosan találhatóak meg, társaságban csak párosodás alkalmával',
