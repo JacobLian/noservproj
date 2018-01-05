@@ -2,11 +2,9 @@
     <div class="container">
         
         <div class='row' id='animals'>
-            <div class="one-third column"><a ui-sref="animals">Orrszarvú<img src="./img/rhino.jpg" class="rhino"></a><button id="openRhino" directive>Tanuld Róla</button></div>
-
-            <div class="one-third column"><a ui-sref="animals">Hegyi Kos (Hamar Ér)<img src="./img/ram.jpg" class="ram"></a></div>
-
-            <div class="one-third column"><a ui-sref="animals">Vaddisznó<img src="./img/boar.jpg" class="boar"></a><button id="openBoar" directive>Tanuld Róla</button></div>
+            <div class="one-third column"><a ui-sref="animals">Orrszarvú<img src="../assets/rhino.jpg" class="rhino"></a><button id="openRhino" directive>Tanuld Róla</button></div>
+            <div class="one-third column"><a ui-sref="animals">Hegyi Kos (Hamar Ér)<img src="../assets/ram.jpg" class="ram"></a></div>
+            <div class="one-third column"><a ui-sref="animals">Vaddisznó<img src="../assets/boar.jpg" class="boar"></a><button id="openBoar" directive>Tanuld Róla</button></div>
         </div>
         <div id="rhinodialog">
             <h2>{{data[0].species}}</h2>
@@ -24,14 +22,6 @@
             <p>{{data[1].habitat}}</p>
         </div>
         
-
-
-
-        <!--<button  id="opener">Contact Us</button>                   -->
-        <!--<div  id="dialog" class="rhinoinfo">
-            <h2 id="rhinoss">Rhinoceros</h2>
-            <p id="show" ng-repeat='data in getData'>{{data}}</p> 
-        </div>-->
         
     </div>
 

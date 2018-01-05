@@ -1,0 +1,29 @@
+.arena{
+    background-image: url('https://source.unsplash.com/MfVTOmc6LcY');
+    background-size:cover;
+    height:100%;
+    width: 100vw;
+}
+
+.preface{
+    display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+	align-items: center;
+    height:85.3vh;
+    width:100vw;
+}
+.fighters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+#aImage img{
+    height:250px;
+    width:300px;
+}
+#bImage img{
+    height:250px;
+    width:300px;
+}

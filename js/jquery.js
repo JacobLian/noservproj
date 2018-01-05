@@ -12,16 +12,13 @@ $(document).ready(function(){
         $("#rhinoss").css("display", 'block')
      
     });
-    
-
-    
 
     $('#addBoar').click(function(){
-        $('#aImage').html('<img src="./img/boarf.gif">')
+        $('#aImage').html('<img src="../assets/boarf.gif">')
     });
 
     $('#addRhino').click(function(){
-        $('#aImage').html('<img src="./img/rhinof.gif">')
+        $('#aImage').html('<img src="../assets/rhinof.gif">')
     });
 
     $('#clear').click(function(){
@@ -29,11 +26,11 @@ $(document).ready(function(){
     });
 
     $('#addBoar2').click(function(){
-        $('#bImage').html('<img src="./img/boarf.gif">')
+        $('#bImage').html('<img src="../assets/boarf.gif">')
     });
 
     $('#addRhino2').click(function(){
-        $('#bImage').html('<img src="./img/rhinof.gif">')
+        $('#bImage').html('<img src="../assets/rhinof.gif">')
     });
 
     $('#clear2').click(function(){
@@ -48,4 +45,3 @@ $(document).ready(function(){
 
 
 });
-// });

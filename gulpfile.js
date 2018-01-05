@@ -1,6 +1,5 @@
 var gulp = require('gulp')
     , sourcemaps = require('gulp-sourcemaps')
-    , sass = require('gulp-sass')
     , CacheBuster = require('gulp-cachebust')
     , cachebust = new CacheBuster()
     , concat = require('gulp-concat')
@@ -10,7 +9,7 @@ var gulp = require('gulp')
 
 
 gulp.task('build-css', function(){
-return gulp.src('./styles/*.scss')
+return gulp.src('./styles/*.css')
 .pipe(sourcemaps.init())
 .pipe(sass())
 .pipe(cachebust.resources())

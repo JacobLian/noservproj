@@ -1,0 +1,66 @@
+body{
+    background-color:black;
+}
+#aniback{
+    background-image: url('https://source.unsplash.com/collection/138471/in-thewild');
+    background-size:cover;
+    height:100vh;
+    width: 100vw;
+}
+#animals{
+    padding-top:18vh;
+    text-align: center;
+}
+.rhino{
+    height:20vh;
+    width:18vw;
+}
+.ram{
+    height: 20vh;
+    width:18vw;
+}
+.boar{
+    height: 20vh;
+    width:18vw; 
+}
+.row a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+#rhinodialog{
+   position: absolute;
+    display:none;
+    font-size:20px;
+    background-color:orange;
+    border: 3px solid black;
+    padding:10px 10px 10px 10px;
+    color: black;
+    border-radius:10px;
+}
+#rhinodialog h2{
+    color: black;
+}
+#rhinodialog p{
+     width: 500px;
+    word-wrap: break-word;
+   
+}
+#boardialog{
+    position: absolute;
+    display:none;
+    font-size:20px;
+    background-color: gray;
+    border: 3px solid black;
+    padding:10px 10px 10px 10px;
+    color: black;
+    border-radius: 10px;
+}
+#boardialog h2{
+    color: black;
+}
+
+#boardialog p{
+    width:500px;
+    word-wrap: break-word;
+}
