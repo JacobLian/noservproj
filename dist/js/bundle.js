@@ -21,7 +21,6 @@ angular.module('noserv', ['ui.router']).config(function ($stateProvider, $urlRou
 angular.module('noserv').controller('ctrl', function ($scope, service) {
 
         $scope.data = service.getData();
-        console.log($scope.getData);
 });
 'use strict';
 
@@ -83,56 +82,51 @@ angular.module('noserv').directive('directive', function () {
         }
     };
 });
-// $(document).ready(function(){
-
-// // $(document).on('load', function(){
-
-//     $("#dialog").dialog({
-//         autoOpen: false,
-
-//     });
-//     $("#opener").click(function () {
-//         $("#dialog").dialog("open");
-//         $("#show").css("display", 'block')
-//         $("#rhinoss").css("display", 'block')
-
-//     });
-
-
-//     $('#addBoar').click(function(){
-//         $('#aImage').html('<img src="./img/boarf.gif">')
-//     });
-
-//     $('#addRhino').click(function(){
-//         $('#aImage').html('<img src="./img/rhinof.gif">')
-//     });
-
-//     $('#clear').click(function(){
-//         $('#aImage').html('')
-//     });
-
-//     $('#addBoar2').click(function(){
-//         $('#bImage').html('<img src="./img/boarf.gif">')
-//     });
-
-//     $('#addRhino2').click(function(){
-//         $('#bImage').html('<img src="./img/rhinof.gif">')
-//     });
-
-//     $('#clear2').click(function(){
-//         $('#bImage').html('')
-//     });
-
-
-//     $('#fight').click(function(){
-//         $('#bImage').append(' GYŐZELEM ');
-//         $('#aImage').append(' VERESÉG ');
-//     });
-
-
-// });
-// // });
 "use strict";
+
+$(document).ready(function () {
+
+    // $(document).on('load', function(){
+
+    $("#dialog").dialog({
+        autoOpen: false
+
+    });
+    $("#opener").click(function () {
+        $("#dialog").dialog("open");
+        $("#show").css("display", 'block');
+        $("#rhinoss").css("display", 'block');
+    });
+
+    $('#addBoar').click(function () {
+        $('#aImage').html('<img src="../assets/boarf.gif">');
+    });
+
+    $('#addRhino').click(function () {
+        $('#aImage').html('<img src="../assets/rhinof.gif">');
+    });
+
+    $('#clear').click(function () {
+        $('#aImage').html('');
+    });
+
+    $('#addBoar2').click(function () {
+        $('#bImage').html('<img src="../assets/boarf.gif">');
+    });
+
+    $('#addRhino2').click(function () {
+        $('#bImage').html('<img src="../assets/rhinof.gif">');
+    });
+
+    $('#clear2').click(function () {
+        $('#bImage').html('');
+    });
+
+    $('#fight').click(function () {
+        $('#bImage').append(' GYŐZELEM ');
+        $('#aImage').append(' VERESÉG ');
+    });
+});
 'use strict';
 
 angular.module('noserv').service('service', function () {

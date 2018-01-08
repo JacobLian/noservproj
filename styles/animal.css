@@ -12,16 +12,16 @@ body{
     text-align: center;
 }
 .rhino{
-    height:20vh;
-    width:18vw;
+    height:200px;
+    width:250px;
 }
 .ram{
-    height: 20vh;
-    width:18vw;
+    height:200px;
+    width:250px;
 }
 .boar{
-    height: 20vh;
-    width:18vw; 
+    height:200px;
+    width:250px;
 }
 .row a{
     text-decoration: none;

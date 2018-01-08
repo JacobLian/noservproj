@@ -11,7 +11,6 @@ var gulp = require('gulp')
 gulp.task('build-css', function(){
 return gulp.src('./styles/*.css')
 .pipe(sourcemaps.init())
-.pipe(sass())
 .pipe(cachebust.resources())
 .pipe(concat('styles.css'))
 .pipe(sourcemaps.write('./maps'))
