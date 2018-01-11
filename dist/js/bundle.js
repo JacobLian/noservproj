@@ -51,11 +51,11 @@ angular.module('noserv').directive('directive', function () {
                 });
 
                 $('#addBoar').click(function () {
-                    $('#aImage').html('<img src="./img/boarf.gif">');
+                    $('#aImage').html('<img src="../assets/boar.jpg">');
                 });
 
                 $('#addRhino').click(function () {
-                    $('#aImage').html('<img src="./img/rhinof.gif">');
+                    $('#aImage').html('<img src="../assets/rhinof.gif">');
                 });
 
                 $('#clear').click(function () {
@@ -63,13 +63,12 @@ angular.module('noserv').directive('directive', function () {
                 });
 
                 $('#addBoar2').click(function () {
-                    $('#bImage').html('<img src="./img/boarf.gif">');
+                    $('#bImage').html('<img src="../assets/boarf.gif">');
                 });
 
                 $('#addRhino2').click(function () {
-                    $('#bImage').html('<img src="./img/rhinof.gif">');
+                    $('#bImage').html('<img src="../assets/rhinof.gif">');
                 });
-
                 $('#clear2').click(function () {
                     $('#bImage').html('');
                 });
@@ -81,51 +80,6 @@ angular.module('noserv').directive('directive', function () {
             });
         }
     };
-});
-"use strict";
-
-$(document).ready(function () {
-
-    // $(document).on('load', function(){
-
-    $("#dialog").dialog({
-        autoOpen: false
-
-    });
-    $("#opener").click(function () {
-        $("#dialog").dialog("open");
-        $("#show").css("display", 'block');
-        $("#rhinoss").css("display", 'block');
-    });
-
-    $('#addBoar').click(function () {
-        $('#aImage').html('<img src="../assets/boarf.gif">');
-    });
-
-    $('#addRhino').click(function () {
-        $('#aImage').html('<img src="../assets/rhinof.gif">');
-    });
-
-    $('#clear').click(function () {
-        $('#aImage').html('');
-    });
-
-    $('#addBoar2').click(function () {
-        $('#bImage').html('<img src="../assets/boarf.gif">');
-    });
-
-    $('#addRhino2').click(function () {
-        $('#bImage').html('<img src="../assets/rhinof.gif">');
-    });
-
-    $('#clear2').click(function () {
-        $('#bImage').html('');
-    });
-
-    $('#fight').click(function () {
-        $('#bImage').append(' GYŐZELEM ');
-        $('#aImage').append(' VERESÉG ');
-    });
 });
 'use strict';
 
