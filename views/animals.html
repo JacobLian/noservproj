@@ -1,6 +1,6 @@
 <div id="aniback">
     <div class="container">
-        
+        <input type="button" value="PLAY"  onclick="play('pig')">
         <div class='row' id='animals'>
             <div class="one-third column"><a ui-sref="animals">Orrszarvú<img src="../assets/rhino.jpg" class="rhino"></a><button id="openRhino" directive>Tanuld Róla</button></div>
             <div class="one-third column"><a ui-sref="animals">Hegyi Kos (Hamar Ér)<img src="../assets/ram.jpg" class="ram"></a></div>
@@ -26,3 +26,15 @@
     </div>
 
 </div>
+<audio id='pig' src="../assets/pig.wav"></audio>
+<audio id='rhino'src="../assets/rhino.wav"></audio>
+<audio id='rhino2' src="../assets/rhino2.wav"></audio>
+
+
+<script>
+ function play(e){
+       var audio = document.getElementById(e);
+       audio.play();
+ }
+
+</script>

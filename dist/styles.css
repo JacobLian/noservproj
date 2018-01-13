@@ -112,6 +112,77 @@ h2{
     text-align: center;
     color:white;
 }
+/* trap{
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    align-items: center;
+}
+trap2{
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    right:240px;
+    border: 4px solid blue;
+}
+trapleft{
+    position: absolute;
+    border-bottom: 75px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    opacity: 0.3;
+    width:350px;
+    transform: rotate(90deg);
+    left:-155px;
+}
+trapright{
+    position: absolute;
+    border-bottom: 75px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    opacity: 0.3;
+    width:450px;
+    transform: rotate(-90deg)
+} */
+homeNav1{
+    position: absolute;
+    left: 0%;
+    display: flex;
+    height: 100%;
+    top: 0%;
+    align-items: center;
+    color:yellow;
+    font-size: 30px;
+}
+homeNav1 p{
+    width:0;
+    word-wrap: break-word;
+}
+homeNav2 {
+    top: 0%;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color:yellow;
+    font-size: 30px;
+}
+homeNav2 trap{
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right:65px solid rgba(255, 0, 0, 0.3); 
+    height:400px;
+    margin-right:-20px;
+}
+homeNav2 p{
+    width:20px;
+    word-wrap: break-word;
+    text-align: center;
+}
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
