@@ -1,4 +1,12 @@
 <div id="aniback">
+    <homeNav1>
+        <trap1 ui-sref="home"></trap1>
+        <p>HOME</p>
+    </homeNav1>
+    <homeNav2>
+        <trap2 ui-sref="battle"></trap2>
+        <p>ARENA</p>
+    </homeNav2>
     <div class="container">
         <input type="button" value="PLAY"  onclick="play('pig')">
         <input type="button" value="PLAY"  onclick="play('rhino')">
@@ -8,6 +16,8 @@
             <div class="one-third column"><a ui-sref="animals">Hegyi Kos (Hamar Ér)<img src="../assets/ram.jpg" class="ram"></a></div>
             <div class="one-third column"><a ui-sref="animals">Vaddisznó<img src="../assets/boar.jpg" class="boar"></a><button id="openBoar" directive>Tanuld Róla</button></div>
         </div>
+      
+        
         <div id="rhinodialog">
             <h2>{{data[0].species}}</h2>
             <p>{{data[0].strengths}}</p>
@@ -24,7 +34,6 @@
             <p>{{data[1].habitat}}</p>
         </div>
         
-        
     </div>
 
 </div>
@@ -36,7 +45,8 @@
 <script>
  function play(e){
        var audio = document.getElementById(e);
+       audio.pause();
+       audio.currentTime = 0;
        audio.play();
  }
-
 </script>
