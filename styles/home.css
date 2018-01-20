@@ -70,8 +70,8 @@ homeNav1 p{
     width:20px;
     word-wrap: break-word;
     margin-left:-40px;
-    margin-top:30px;
     text-align: center;
+    line-height: 1.6;
 }
 homeNav2 {
     top: 0%;
@@ -101,5 +101,5 @@ homeNav2 p{
     word-wrap: break-word;
     text-align: center;
     margin-right:20px;
-    margin-top:20px;
+    line-height: 1.6;
 }

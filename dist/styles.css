@@ -1,5 +1,11 @@
-body{
-    background-color:black;
+.jobrow1{
+    margin-top:30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: space-around;
 }
 #aniback{
     background-image: url('https://source.unsplash.com/collection/138471/in-thewild');
@@ -96,7 +102,11 @@ body{
     height:250px;
     width:300px;
 }
-
+button{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+}
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
     position: fixed;
@@ -169,8 +179,8 @@ homeNav1 p{
     width:20px;
     word-wrap: break-word;
     margin-left:-40px;
-    margin-top:30px;
     text-align: center;
+    line-height: 1.6;
 }
 homeNav2 {
     top: 0%;
@@ -200,7 +210,7 @@ homeNav2 p{
     word-wrap: break-word;
     text-align: center;
     margin-right:20px;
-    margin-top:20px;
+    line-height: 1.6;
 }
 
 html, body, div, span, object, iframe,

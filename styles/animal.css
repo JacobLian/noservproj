@@ -1,5 +1,11 @@
-body{
-    background-color:black;
+.jobrow1{
+    margin-top:30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: space-around;
 }
 #aniback{
     background-image: url('https://source.unsplash.com/collection/138471/in-thewild');
