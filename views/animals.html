@@ -11,11 +11,13 @@
     <input type="button" value="PLAY"  onclick="play('rhino')">
     <input type="button" value="PLAY"  onclick="play('rhino2')">
         
-        <div class='jobrow1' id='animals'>
-            <div class="one-third column"><a ui-sref="animals">Orrszarvú<img src="../assets/rhino.jpg" class="rhino"></a><button id="openRhino" directive>Tanuld Róla</button></div>
-            <div class="one-third column"><a ui-sref="animals">Hegyi Kos (Hamar Ér)<img src="../assets/ram.jpg" class="ram"></a></div>
-            <div class="one-third column"><a ui-sref="animals">Vaddisznó<img src="../assets/boar.jpg" class="boar"></a><button id="openBoar" directive>Tanuld Róla</button></div>
-        </div>
+    <div class='jobrow1' id='animals'>
+        
+            <div><p>Orrszarvú</p><img src="../assets/rhino.jpg" width="250px" height="200px"><button id="openRhino" directive>Tanuld Róla</button></div>
+            <div>Hegyi Kos (Hamar Ér)<img src="../assets/ram.jpg" width="250px" height="200px"></a></div>
+            <div>Vaddisznó<img src="../assets/boar.jpg" width="250px" height="200px"></a><button id="openBoar" directive>Tanuld Róla</button></div>
+        
+    </div>
       
         
         <div id="rhinodialog">
@@ -41,7 +43,7 @@
 <audio id='rhino'src="../assets/rhino.wav"></audio>
 <audio id='rhino2' src="../assets/rhino2.wav"></audio>
 
-
+<!-- try to not have multiple going -->
 <script>
  function play(e){
        var audio = document.getElementById(e);
