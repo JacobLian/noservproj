@@ -11,11 +11,22 @@
     <input type="button" value="PLAY"  onclick="play('rhino')">
     <input type="button" value="PLAY"  onclick="play('rhino2')">
         
-    <div class='jobrow1' id='animals'>
+    <div class='anirow1' id='animals'>
         
-            <div><p>Orrszarvú</p><img src="../assets/rhino.jpg" width="250px" height="200px"><button id="openRhino" directive>Tanuld Róla</button></div>
-            <div>Hegyi Kos (Hamar Ér)<img src="../assets/ram.jpg" width="250px" height="200px"></a></div>
-            <div>Vaddisznó<img src="../assets/boar.jpg" width="250px" height="200px"></a><button id="openBoar" directive>Tanuld Róla</button></div>
+            <div class='col'>
+                <p>Orrszarvú</p><img src="../assets/rhino.jpg" width="250px" height="200px"><button id="openRhino" directive>Tanuld Róla</button>
+                <div class="data">
+                        <li>{{data[0].strengths}}</li>
+                </div>
+            </div>
+
+            <div class='col'>
+                <p>Hegyi Kos (Hamar Ér)</p><img src="../assets/ram.jpg" width="250px" height="200px"></a>
+            </div>
+            <div class='col'>
+                <p>Vaddisznó</p><img src="../assets/boar.jpg" width="250px" height="200px"></a><button id="openBoar" directive>Tanuld Róla</button>
+                
+            </div>
         
     </div>
       
@@ -45,6 +56,12 @@
 
 <!-- try to not have multiple going -->
 <script>
+function extend(e){
+    var column = document.getElementsByClassName(e)    
+}
+
+
+
  function play(e){
        var audio = document.getElementById(e);
        audio.pause();

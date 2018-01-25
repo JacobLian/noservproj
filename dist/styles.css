@@ -1,4 +1,4 @@
-.jobrow1{
+.anirow1{
     margin-top:30px;
     display: flex;
     flex-direction: row;
@@ -6,6 +6,24 @@
     justify-content: space-around;
     align-items: baseline;
     align-content: space-around;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    border:4px solid blue;
+    border-radius: 10px;
+    background-color: rgba(255,0,0,0.3);
+    height: 270px;
+    width: 275px;
+    align-items: center;
+    transition: all .5s;
+    overflow: hidden;
+}
+.data{
+    overflow: hidden;
+}
+.extended{
+    height: 400px;
 }
 #aniback{
     background-image: url('https://source.unsplash.com/collection/138471/in-thewild');

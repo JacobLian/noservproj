@@ -5,25 +5,17 @@ angular.module('noserv').directive('directive', function(){
             scope.$$postDigest(function() {
     $("#rhinodialog").dialog({
         autoOpen: false,
-        
     });
     $("#boardialog").dialog({
         autoOpen: false,
-        
     });
 
     $("#openRhino").click(function () {
         $("#rhinodialog").dialog("open");
-        // $("#rhino1").css("display", 'block')
-        // $("#rhinoInfo").css("display", 'block')
-     
     });
 
     $("#openBoar").click(function () {
         $("#boardialog").dialog('open')
-        // $("#boar1").css("display", 'block')
-        // $("#boarInfo").css("display", 'block')
-        
     });
 
     $('#addBoar').click(function(){
