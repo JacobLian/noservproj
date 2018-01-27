@@ -13,7 +13,7 @@
         
     <div class='anirow1' id='animals'>
         
-            <div class='col'>
+            <div class='col1'>
                 <p>Orrszarvú</p><img src="../assets/rhino.jpg" width="250px" height="200px"><button id="hino" directive>Tanuld Róla</button>
                 <p>hi
                 </p>
@@ -55,10 +55,9 @@
 
 <!-- try to not have multiple going -->
 <script>
-function extend(e){
-    var column = document.getElementsByClassName(e)    
-    
-}
+$("#hino").click(function () {
+    $("div.col1").toggleClass('.extended');
+})
 
 
 

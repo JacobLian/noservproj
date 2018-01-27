@@ -10,7 +10,7 @@ angular.module('noserv').directive('directive', function(){
         autoOpen: false,
     });
     $("#hino").click(function () {
-        $("div.col").toggleClass('.extended');
+        $("div.col1").toggleClass('.extended');
     })
 
     $("#openRhino").click(function () {
