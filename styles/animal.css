@@ -1,5 +1,4 @@
 .anirow1{
-    margin-top:30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -7,18 +6,25 @@
     align-items: baseline;
     align-content: space-around;
 }
-.col1{
+.col{
     border:4px solid blue;
+    position: relative;
     border-radius: 10px;
     background-color: rgba(255,0,0,0.3);
-    height:250px;
+    height: 250px;
     width: 275px;
-    align-items: center;
-    transition: all .5s;
+    transition: all 1s;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
-.extended{
-    height: 400px;
+.col:hover{
+    height:400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 #aniback{
     background-image: url('https://source.unsplash.com/collection/138471/in-thewild');

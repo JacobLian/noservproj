@@ -9,9 +9,6 @@ angular.module('noserv').directive('directive', function(){
     $("#boardialog").dialog({
         autoOpen: false,
     });
-    $("#hino").click(function () {
-        $("div.col1").toggleClass('.extended');
-    })
 
     $("#openRhino").click(function () {
         $("#rhinodialog").dialog("open");

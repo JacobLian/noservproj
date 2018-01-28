@@ -94,7 +94,7 @@ homeNav2 trap2{
     transition:all .5s;
 }
 homeNav2 trap2:hover{
-    border-right: 75px solid rgba(255, 0, 0, 0.5)
+    border-right: 75px solid rgba(255, 0, 0, 0.5);
 }
 homeNav2 p{
     width:20px;
