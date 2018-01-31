@@ -1,59 +1,78 @@
-<div id="aniback">
-    <homeNav1>
-        <trap1 ui-sref="home"></trap1>
-        <p>HOME</p>
-    </homeNav1>
-    <homeNav2>
-        <trap2 ui-sref="battle"></trap2>
-        <p>ARENA</p>
-    </homeNav2>
-    <input type="button" value="PLAY"  onclick="play('pig')">
-    <input type="button" value="PLAY"  onclick="play('rhino')">
-    <input type="button" value="PLAY"  onclick="play('rhino2')">
+<div class="aniback"></div>
+<homeNav1>
+    <trap1 ui-sref="home"></trap1>
+    <p>HOME</p>
+</homeNav1>
+<homeNav2>
+    <trap2 ui-sref="battle"></trap2>
+    <p>ARENA</p>
+</homeNav2>
         
-    <div class='anirow1' id='animals'>
+<div class='animals' id='animals'>
         
-        <div class='col'>
-        <div>
-            <p>Orrszarvú</p><img src="../assets/rhino.jpg" width="250px" height="200px">
-            <p id="hino" directive>Learn More</p>
+    <div class='col'>
+        <div class="colChild">
+            <p>Orrszarvú</p><img src="../assets/rhino.jpg" width="250px" height="200px" onclick="play('rhino')">
+            <p>Funny Comment</p>
         </div>
-            <p>{{data[0].strengths}}</p>
-            <p>{{data[0].weakness}}</p>
-            <p>{{data[0].family}}</p>
-            <p>{{data[0].habitat}}</p>
-        </div>
-
-        <div class='col'>
-            <p>Hegyi Kos (Hamar Ér)</p><img src="../assets/ram.jpg" width="250px" height="200px"></a>
-        </div>
-        <div class='col'>
-            <p>Vaddisznó</p><img src="../assets/boar.jpg" width="250px" height="200px"></a><button id="openBoar" directive>Tanuld Róla</button>
-                
-        </div>
-        
+            <ul>{{data[0].strengths}}</ul>
+            <ul>{{data[0].weakness}}</ul>
+            <ul>{{data[0].family}}</ul>
+            <ul>{{data[0].habitat}}</ul>
     </div>
-      
-        
-        <div id="rhinodialog">
-            <h2>{{data[0].species}}</h2>
-            <p>{{data[0].strengths}}</p>
-            <p>{{data[0].weakness}}</p>
-            <p>{{data[0].family}}</p>
-            <p>{{data[0].habitat}}</p>
-
+    <div class='col'>
+        <div class="colChild">
+            <p>Hegyi Kos (Hamar Ér)</p><img src="../assets/ram.jpg" width="250px" height="200px">
+            <p>Learn More</p>
         </div>
-        <div id="boardialog" >
-            <h2>{{data[1].species}}</h2>
-            <p>{{data[1].strengths}}</p>
-            <p>{{data[1].weakness}}</p>
-            <p>{{data[1].family}}</p>
-            <p>{{data[1].habitat}}</p>
-        </div>
-        
     </div>
 
+    <div class='col'>
+        <div class="colChild">
+            <p>Vaddisznó</p><img src="../assets/boar.jpg" width="250px" height="200px"></a>
+            <p>Learn More</p>
+        </div>
+        <ul>{{data[1].strengths}}</ul>
+        <ul>{{data[1].weakness}}</ul>
+        <ul>{{data[1].family}}</ul>
+        <ul>{{data[1].habitat}}</ul>
+    </div>
+        <div class='col'>
+        <div class="colChild">
+            <p>Vaddisznó</p><img src="../assets/boar.jpg" width="250px" height="200px"></a>
+            <p>Learn More</p>
+        </div>
+        <ul>{{data[1].strengths}}</ul>
+        <ul>{{data[1].weakness}}</ul>
+        <ul>{{data[1].family}}</ul>
+        <ul>{{data[1].habitat}}</ul>
+    </div>    
+
+    <div class='col'>
+        <div class="colChild">
+            <p>Vaddisznó</p><img src="../assets/boar.jpg" width="250px" height="200px"></a>
+            <p>Learn More</p>
+        </div>
+        <ul>{{data[1].strengths}}</ul>
+        <ul>{{data[1].weakness}}</ul>
+        <ul>{{data[1].family}}</ul>
+        <ul>{{data[1].habitat}}</ul>
+    </div>
+
+    <div class='col'>
+        <div class="colChild">
+            <p>Vaddisznó</p><img src="../assets/boar.jpg" width="250px" height="200px"></a>
+            <p>Learn More</p>
+        </div>
+        <ul>{{data[1].strengths}}</ul>
+        <ul>{{data[1].weakness}}</ul>
+        <ul>{{data[1].family}}</ul>
+        <ul>{{data[1].habitat}}</ul>
+        </div>    
+    
 </div>
+
+
 <audio id='pig' src="../assets/pig.wav"></audio>
 <audio id='rhino'src="../assets/rhino.wav"></audio>
 <audio id='rhino2' src="../assets/rhino2.wav"></audio>
