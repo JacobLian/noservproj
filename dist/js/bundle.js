@@ -23,7 +23,7 @@ angular.module('noserv').controller('ctrl', function ($scope, service) {
         $scope.animals = service.getAnimals();
         $scope.fact1 = service.getFact1();
         $scope.fact2 = service.getFact2();
-
+        // $scope.getFact = service.getFact();
         // $scope.info = service.getInfo().then(function(response){
         //         console.log(response);
         // })
@@ -116,7 +116,7 @@ angular.module('noserv').service('service', function ($http) {
         return facts[randomNumber];
     };
     this.getFact = function () {
-        document.getElementsByTagName('span').innerHTML = getFact1();
+        document.getElementsByTagName('span').innerHTML = getFact2();
     };
 
     // this.getInfo = function(){

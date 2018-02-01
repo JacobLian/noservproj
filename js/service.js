@@ -50,7 +50,7 @@ this.getFact2 = function(){
     return facts[randomNumber];
 }
 this.getFact = function(){
-    document.getElementsByTagName('span').innerHTML = getFact1();
+    document.getElementsByTagName('span').innerHTML = getFact2();
 }
 
 // this.getInfo = function(){
