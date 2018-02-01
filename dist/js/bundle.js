@@ -20,7 +20,13 @@ angular.module('noserv', ['ui.router']).config(function ($stateProvider, $urlRou
 
 angular.module('noserv').controller('ctrl', function ($scope, service) {
 
-        $scope.data = service.getData();
+        $scope.animals = service.getAnimals();
+        $scope.fact1 = service.getFact1();
+        $scope.fact2 = service.getFact2();
+
+        // $scope.info = service.getInfo().then(function(response){
+        //         console.log(response);
+        // })
 });
 'use strict';
 
@@ -77,9 +83,9 @@ angular.module('noserv').directive('directive', function () {
 });
 'use strict';
 
-angular.module('noserv').service('service', function () {
+angular.module('noserv').service('service', function ($http) {
 
-    var data = [{
+    var animals = [{
         'species': 'Orszarvú',
         'strengths': 'Erőségek: kiváló hallás és szaglás',
         'weakness': 'Gyengeségek: viszonzlag gyenge látásúak',
@@ -95,8 +101,26 @@ angular.module('noserv').service('service', function () {
 
     }];
 
-    this.getData = function () {
-        return data;
+    this.getAnimals = function () {
+        return animals;
     };
+
+    var facts = ['I like Cats', 'You like cats', 'we like cats', 'they like cats', 'it likes cats', 'dogs', 'money', 'dig', 'wow', 'happy'];
+
+    this.getFact1 = function () {
+        var randomNumber = Math.floor(Math.random() * facts.length);
+        return facts[randomNumber];
+    };
+    this.getFact2 = function () {
+        var randomNumber = Math.floor(Math.random() * facts.length);
+        return facts[randomNumber];
+    };
+    this.getFact = function () {
+        document.getElementsByTagName('span').innerHTML = getFact1();
+    };
+
+    // this.getInfo = function(){
+    //     return $http.get('http://quickstats.nass.usda.gov/api.json')
+    // }
 });
 //# sourceMappingURL=bundle.js.map

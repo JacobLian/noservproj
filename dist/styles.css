@@ -1,3 +1,9 @@
+.anintro{
+    text-align: center;
+    padding-top:5%;
+    font-size: 50px;
+    color: white;
+}
 .aniback{
     position: fixed;
     background-image: url('https://source.unsplash.com/collection/138471/in-thewild');
@@ -5,7 +11,6 @@
     height:100%;
     width: 100%;
     z-index: -10;
-    padding-bottom: 20px;
 }
 .animals{
     display: flex;
@@ -16,7 +21,7 @@
     align-content: space-between;
     width: 80%;
     margin-left:10%;
-    padding-top:18vh;
+    padding-top:8vh;
 }
 .col{
     border-radius: 10px;
