@@ -1,6 +1,6 @@
 .anintro{
     text-align: center;
-    padding-top:5%;
+    padding-top:4%;
     font-size: 50px;
     color: white;
 }
@@ -21,7 +21,7 @@
     align-content: space-between;
     width: 80%;
     margin-left:10%;
-    padding-top:8vh;
+    padding-top:5vh;
 }
 .col{
     border-radius: 10px;
