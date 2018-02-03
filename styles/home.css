@@ -1,4 +1,7 @@
 /* Style the video: 100% width and height to cover the entire window */
+#hi{
+    transition: 2s all;
+}
 #myVideo {
     position: fixed;
     right: 0;

@@ -88,35 +88,63 @@
     width: 100vw;
     z-index: -10;
 }
-
+.results{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 10%;
+    left:10%;
+    width:80%;
+}
+.results p{
+    font-size: 80px;
+}
 .preface{
+    position: absolute;
     display: flex;
 	flex-direction: row;
     justify-content: space-around;
 	align-items: center;
     height:85.3vh;
-    width:100vw;
+    width:80%;
+    margin-left:10%;
 }
 .fighters{
+    position: absolute;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    align-items: flex-end;
+    width: 100%;
+    bottom:5%;
+    font-size: 20px;
 }
-#aImage img{
-    height:250px;
+.fighters p{
+    border:2px white solid;
+    border-radius: 3px;
+    padding:10px;
+}
+.VS{
+    font-size: 30px;
+}
+#aImage{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    height: 250px;
     width:300px;
 }
-#bImage img{
+#bImage{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
     height:250px;
     width:300px;
-}
-button{
-    background-color: transparent;
-    border: 1px solid black;
-    border-radius: 4px;
 }
 /* Style the video: 100% width and height to cover the entire window */
+#hi{
+    transition: 2s all;
+}
 #myVideo {
     position: fixed;
     right: 0;
@@ -307,10 +335,6 @@ input, select {
 *, *:before, *:after {
  box-sizing: border-box;
 }
-body{
-    height:100vh;
-    width:100vw;
-}
 nav{
     background-color: rgb(250,255,250);
     display:flex;
@@ -341,5 +365,7 @@ nav a{
 nav a:hover{
     color: white;
 }
-
+p{
+    color: white;
+}
 /*# sourceMappingURL=maps/styles.css.map */

@@ -1,11 +1,10 @@
-
 <video autoplay muted loop id="myVideo" src="../assets/tree.mp4"></video>
       
     <!-- <button id="myBtn" onclick="myFunction()">Pause</button> -->
     <div id="welcome">Üdvözlünk a Vadállat Kűzdöterében!</div>
-    <h2>{{fact1}}</h2>
-    <span>{{fact2}}</span>
-<button ng-click="getFact()" value="NEW" style="width: 100px; height:100px;"></button>
+    <h2 id='hi'>Hi</h2>
+    <h3 id='hello'>Hello</h3>
+<button ng-click="facts()" style="width: 100px; height:100px;"></button>
     <homeNav1>
         <trap1 ui-sref="battle"></trap1>
         <p>ARENA</p>
@@ -14,8 +13,23 @@
         <trap2 ui-sref="animals"></trap2>
         <p>ANIMALS</p>
     </homeNav2>
-
-
+<!-- <script>
+function getFact(){
+    var a = document.getElementById('hi')
+    var b = document.getElementById('hello')
+    roll();
+    function roll(){
+        var randomNum = Math.floor(Math.random() * (info.length));
+        function rollAgain(){
+            a.innerHTML = info[randomNum]
+            b.innerHTML = info[randomNum]
+            if(a == b){
+                roll();
+            }
+        }
+        }
+    }
+</script> -->
 
 
 <!-- <script>

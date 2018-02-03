@@ -21,9 +21,26 @@ angular.module('noserv', ['ui.router']).config(function ($stateProvider, $urlRou
 angular.module('noserv').controller('ctrl', function ($scope, service) {
 
         $scope.animals = service.getAnimals();
-        $scope.fact1 = service.getFact1();
-        $scope.fact2 = service.getFact2();
-        // $scope.getFact = service.getFact();
+
+        $scope.facts = function () {
+                var info = service.getFacts();
+                var a = document.getElementById('hi');
+                var b = document.getElementById('hello');
+                roll();
+                function roll() {
+                        var randomNum1 = Math.floor(Math.random() * info.length);
+                        var randomNum2 = Math.floor(Math.random() * info.length);
+                        a.innerHTML = info[randomNum1];
+                        b.innerHTML = info[randomNum2];
+                        rollAgain();
+                        function rollAgain() {
+                                if (a.innerHTML == b.innerHTML) {
+                                        roll();
+                                }
+                        }
+                }
+        };
+
         // $scope.info = service.getInfo().then(function(response){
         //         console.log(response);
         // })
@@ -35,23 +52,8 @@ angular.module('noserv').directive('directive', function () {
         restrict: 'A',
         link: function link(scope, element, attribute) {
             scope.$$postDigest(function () {
-                $("#rhinodialog").dialog({
-                    autoOpen: false
-                });
-                $("#boardialog").dialog({
-                    autoOpen: false
-                });
-
-                $("#openRhino").click(function () {
-                    $("#rhinodialog").dialog("open");
-                });
-
-                $("#openBoar").click(function () {
-                    $("#boardialog").dialog('open');
-                });
-
                 $('#addBoar').click(function () {
-                    $('#aImage').html('<img src="../assets/boar.jpg">');
+                    $('#aImage').html('<img src="../assets/boarf.gif">');
                 });
 
                 $('#addRhino').click(function () {
@@ -100,27 +102,12 @@ angular.module('noserv').service('service', function ($http) {
         'habitat': 'Élőhely: Csak a minden búvóhely nélküli, teljesen nyílt területeket és a hegyek magas részeit kerülik.'
 
     }];
-
+    var facts = ['I like Cats', 'You like cats', 'we like cats', 'they like cats', 'it likes cats', 'dogs', 'money', 'dig', 'wow', 'happy'];
     this.getAnimals = function () {
         return animals;
     };
-
-    var facts = ['I like Cats', 'You like cats', 'we like cats', 'they like cats', 'it likes cats', 'dogs', 'money', 'dig', 'wow', 'happy'];
-
-    this.getFact1 = function () {
-        var randomNumber = Math.floor(Math.random() * facts.length);
-        return facts[randomNumber];
+    this.getFacts = function () {
+        return facts;
     };
-    this.getFact2 = function () {
-        var randomNumber = Math.floor(Math.random() * facts.length);
-        return facts[randomNumber];
-    };
-    this.getFact = function () {
-        document.getElementsByTagName('span').innerHTML = getFact2();
-    };
-
-    // this.getInfo = function(){
-    //     return $http.get('http://quickstats.nass.usda.gov/api.json')
-    // }
 });
 //# sourceMappingURL=bundle.js.map
