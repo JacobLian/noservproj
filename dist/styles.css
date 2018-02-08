@@ -1,3 +1,9 @@
+:root{
+    --anicolor1:rgb(255, 40, 40);
+    --anicolor2:rgb(199, 168, 31);
+    --anicolor3:rgb(117, 255, 53);
+    --anicolor4:rgb(27, 163, 226);
+}
 .anintro{
     text-align: center;
     padding-top:4%;
@@ -25,26 +31,32 @@
 }
 .col{
     border-radius: 10px;
-    background-color: rgb(144, 231, 4);
-    height: 260px;
-    width: 300px;
-    transition: all 1s;
+    max-height: 290px;
+    width: 350px;
+    transition: max-height 3s;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     color: white;
     margin:20px;
 }
-.col p{font-size: 25px;}
+.col p{font-size: 25px; padding-top:5px; padding-bottom:5px;}
 .col ul{font-size:18px; margin-left: 20px; margin-top: 5px;}
-.col:hover{height:400px;}
+.col:hover{max-height:1000px;}
 .colChild{text-align: center;}
+.colChild img{height: 220px; width:290px;}
+.colChild button{font-size:10px; height:20px; width:100px;}
+.box1{background-color: var(--anicolor1);}
+.box2{background-color: var(--anicolor2);}
+.box3{background-color: var(--anicolor3);}
+.box4{background-color: var(--anicolor4);}
+.box5{background-color: var(--anicolor1);}
 .row a{
     text-decoration: none;
     color: black;
     font-size: 25px;
 }
-#rhinodialog{
+/* #rhinodialog{
    position: absolute;
     display:none;
     font-size:20px;
@@ -53,8 +65,8 @@
     padding:10px 10px 10px 10px;
     color: black;
     border-radius:10px;
-}
-#rhinodialog h2{
+} */
+/* #rhinodialog h2{
     color: black;
 }
 #rhinodialog p{
@@ -79,7 +91,7 @@
 #boardialog p{
     width:500px;
     word-wrap: break-word;
-}
+} */
 
 .arena{
     background-image: url('https://source.unsplash.com/MfVTOmc6LcY');
@@ -141,10 +153,6 @@
     height:250px;
     width:300px;
 }
-/* Style the video: 100% width and height to cover the entire window */
-#hi{
-    transition: 2s all;
-}
 #myVideo {
     position: fixed;
     right: 0;
@@ -153,32 +161,6 @@
     min-height: 100%;
     z-index: -10;
 }
-/* Style the button used to pause/play the video */
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
-
-#myBtn:hover {
-    background: #ddd;
-    color: black;
-}
-
-
-#photo {
-    background-image: url("https://source.unsplash.com/collection/470296/wild-animals");  
-    background-position: center;
-    background-size: cover;
-    width:100vw;
-    height: 100vh;
-    z-index: -10;
-}
-
 #welcome{
     text-align: center;
     font-size: 35px;
@@ -188,6 +170,16 @@
 h2{
     text-align: center;
     color:white;
+}
+#fact1{
+    position: absolute;
+    left:25%;
+    top:25%;
+}
+#fact2{
+    position: absolute;
+    right:25%;
+    top:25%;
 }
 homeNav1{
     position: fixed;

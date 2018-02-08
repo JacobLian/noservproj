@@ -1,7 +1,3 @@
-/* Style the video: 100% width and height to cover the entire window */
-#hi{
-    transition: 2s all;
-}
 #myVideo {
     position: fixed;
     right: 0;
@@ -10,32 +6,6 @@
     min-height: 100%;
     z-index: -10;
 }
-/* Style the button used to pause/play the video */
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
-
-#myBtn:hover {
-    background: #ddd;
-    color: black;
-}
-
-
-#photo {
-    background-image: url("https://source.unsplash.com/collection/470296/wild-animals");  
-    background-position: center;
-    background-size: cover;
-    width:100vw;
-    height: 100vh;
-    z-index: -10;
-}
-
 #welcome{
     text-align: center;
     font-size: 35px;
@@ -45,6 +15,16 @@
 h2{
     text-align: center;
     color:white;
+}
+#fact1{
+    position: absolute;
+    left:25%;
+    top:25%;
+}
+#fact2{
+    position: absolute;
+    right:25%;
+    top:25%;
 }
 homeNav1{
     position: fixed;

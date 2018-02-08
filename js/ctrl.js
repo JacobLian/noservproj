@@ -2,11 +2,10 @@ angular.module('noserv').controller('ctrl', function($scope, service){
 
         
         $scope.animals = service.getAnimals();
-
         $scope.facts = function(){
                 var info = service.getFacts();
-                var a = document.getElementById('hi')
-                var b = document.getElementById('hello')
+                var a = document.getElementById('fact1')
+                var b = document.getElementById('fact2')
                 roll();
                 function roll(){
                         var randomNum1 = Math.floor(Math.random() * (info.length));

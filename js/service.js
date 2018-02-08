@@ -35,7 +35,7 @@ var facts = [
     'Komodo dragons can run up to 11 miles an hour in short bursts',
     'Spectacled bears are the only wild bear species in South America',
     'An elephant can smell water up to 3 miles away',
-    'If you cut off a snail\s eye, it will grow a new one',
+    'If you cut off a snail\'s eye, it will grow a new one',
     'On average, cows poop 16 times per day',
     'Deer can\'t eat hay',
     'No tigers ever have the same stripes, and this is how individual tigers can be identified',
@@ -58,8 +58,7 @@ var facts = [
     'A male gorilla can eat 40 pounds of food a day',
     'There is no record of a human being attacked by a healthy wolf',
     'Hyenas regulary eat the faces of other animals',
-    'A giraffe has the same number of bones in its neck as a man',
-    '',
+    'A giraffe has the same number of bones in its neck as a man'
 
 ];
 this.getAnimals = function(){
