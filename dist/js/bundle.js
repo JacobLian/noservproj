@@ -22,9 +22,9 @@ angular.module('noserv').controller('ctrl', function ($scope, service) {
 
         $scope.animals = service.getAnimals();
         $scope.video = function (animal) {
+
                 // document.getElementById('videoPlayer').setAttribute('src', animal)
-                var cat = "https://www.youtube.com/embed/R02QrS2aCDM";
-                var dog = "https://www.youtube.com/embed/-CFtIKfYDv0";
+                var cat = "https://www.youtube.com/embed/-CFtIKfYDv0";
                 var answer = 'hello';
                 console.log(animal);
         };

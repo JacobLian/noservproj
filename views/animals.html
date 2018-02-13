@@ -82,6 +82,7 @@
 <script>
  function play(e){
        var audio = document.getElementById(e);
+       console.log(audio);
        audio.pause();
        audio.currentTime = 0;
        audio.play();

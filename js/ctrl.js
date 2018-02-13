@@ -5,6 +5,7 @@ angular.module('noserv').controller('ctrl', function($scope, service){
         $scope.video = function(animal){
         
                 // document.getElementById('videoPlayer').setAttribute('src', animal)
+                var cat = "https://www.youtube.com/embed/-CFtIKfYDv0"
                 var answer ='hello'
                 console.log(animal)
         }
