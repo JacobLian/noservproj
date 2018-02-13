@@ -1,20 +1,35 @@
 angular.module('noserv').service('service', function($http){
-    var animals = [
-        {
-    'species':'Orszarvú',
-    'strengths':'Erőségek: kiváló hallás és szaglás',
-    'weakness':'Gyengeségek: viszonzlag gyenge látásúak',
-    'family':'Utazás: Főleg magányosan találhatóak meg, társaságban csak párosodás alkalmával',
-    'habitat':'Élőhely: Füves területeken és nyílt szavannákon',
-    'video': 'https://www.youtube.com/embed/R02QrS2aCDM'
-},{
-    'species':'Vaddisznó',
-    'strengths':'Erőségek: Jól úsznak',
-    'weakness':'Gyengeségek: Többnyire lassú ügetéssel szaladnak',
-    'family':'Utazás: A vaddisznó családi közösségekben, csapatokban jár, ezt kondának nevezzük',
-    'habitat':'Élőhely: Csak a minden búvóhely nélküli, teljesen nyílt területeket és a hegyek magas részeit kerülik.',
-    'video':'https://www.youtube.com/embed/-CFtIKfYDv0'
-}];
+        var animals = [{
+                'species':'Rhinoceros',
+                'strengths':'Strengths: Extremely strong hearing and sense of smell',
+                'weakness':'Weakness: Very poor eyesight nearly blind',
+                'family':'Travel: Rhinos travel alone unless it is mating season',
+                'habitat':'Habitat: Generally live in grassy areas or wide open Savannas',
+                'video': 'https://www.youtube.com/embed/R02QrS2aCDM'
+            },{
+                'species':'Wild Boar',
+                'strengths':'Strengths: Boars are suprisingly good swimmers and great at hiding',
+                'weakness':'Weakness: Extremely slow runners and must rely on brush and trees to hide',
+                'family':'Wild boars are often found in packs as they mate alot and provide for their offspring',
+                'habitat':'Habitat: Boars will rarely come out in the open, they dwell mainly in mountains or foresty areas',
+                'video':'https://www.youtube.com/embed/-CFtIKfYDv0'
+            }]
+//     var animals = [
+//         {
+//     'species':'Orszarvú',
+//     'strengths':'Erőségek: kiváló hallás és szaglás',
+//     'weakness':'Gyengeségek: viszonzlag gyenge látásúak',
+//     'family':'Utazás: Főleg magányosan találhatóak meg, társaságban csak párosodás alkalmával',
+//     'habitat':'Élőhely: Füves területeken és nyílt szavannákon',
+//     'video': 'https://www.youtube.com/embed/R02QrS2aCDM'
+// },{
+//     'species':'Vaddisznó',
+//     'strengths':'Erőségek: Jól úsznak',
+//     'weakness':'Gyengeségek: Többnyire lassú ügetéssel szaladnak',
+//     'family':'Utazás: A vaddisznó családi közösségekben, csapatokban jár, ezt kondának nevezzük',
+//     'habitat':'Élőhely: Csak a minden búvóhely nélküli, teljesen nyílt területeket és a hegyek magas részeit kerülik.',
+//     'video':'https://www.youtube.com/embed/-CFtIKfYDv0'
+// }];
 var facts = [
     'Gorillas can catch human colds and other illnesses',
     'Ostriches can run faster than horses, and the males can roar like lions', 
