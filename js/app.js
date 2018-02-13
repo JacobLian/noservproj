@@ -15,7 +15,7 @@ angular.module('noserv', ['ui.router'])
        
     })
     .state('battle', {
-        url: '/battle',
-        templateUrl:'./views/battle.html'
+        url: '/videos',
+        templateUrl:'./views/videos.html'
     })
 })

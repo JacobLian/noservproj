@@ -41,7 +41,7 @@
     margin:20px;
 }
 .col p{font-size: 25px; padding-top:5px; padding-bottom:5px;}
-.col ul{font-size:18px; margin-left: 20px; margin-top: 5px;}
+.col ul{font-size:18px; margin-left: 20px; margin-top: 5px; padding-bottom:5px;}
 .col:hover{max-height:1000px;}
 .colChild{text-align: center;}
 .colChild img{height: 220px; width:290px;}
@@ -171,76 +171,46 @@ h2{
     text-align: center;
     color:white;
 }
+.facts1{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-left:10%;
+    margin-top:30px;
+}
+.facts2{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-left:10%;
+    margin-top:200px;
+}
 #fact1{
-    position: absolute;
-    left:25%;
-    top:25%;
+    text-align: center;
+    width: 275px;
+    max-height: 1000px;
+    border-radius: 4px;
+    background-color: rgba(255, 5, 5, .5);
+    padding:10px;
+    font-size: 21px;
 }
 #fact2{
-    position: absolute;
-    right:25%;
-    top:25%;
-}
-homeNav1{
-    position: fixed;
-    left: 0%;
-    display: flex;
-    height: 100%;
-    top: 0%;
-    align-items: center;
-    color:yellow;
-    font-size: 30px;
-}
-homeNav1 trap1{
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    border-left:65px solid rgb(21, 113, 252); 
-    height:400px;
-    z-index: -1;
-    cursor: pointer;
-    transition:all .5s;
-}
-homeNav1 trap1:hover{
-    height:500px;
-    border-left:85px solid rgb(21, 113, 252);
-}
-homeNav1 p{
-    width:20px;
-    word-wrap: break-word;
-    margin-left:-40px;
     text-align: center;
-    line-height: 1.6;
+    width: 275px;
+    max-height: 1000px;
+    border-radius: 4px;
+    background-color: rgba(255, 5, 5, .5);
+    padding:10px;
+    font-size: 21px;
 }
-homeNav2 {
-    top: 0%;
-    position: fixed;
-    right: 0px;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    color:yellow;
-    font-size: 30px;
-}
-homeNav2 trap2{
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    border-right:65px solid rgb(21, 113, 252); 
-    height:400px;
-    margin-right:-40px;
-    z-index: -1;
-    cursor: pointer;
-    transition:all .5s;
-}
-homeNav2 trap2:hover{
-    border-right: 80px solid rgb(21, 113, 252);
-    height:500px;
-}
-homeNav2 p{
-    width:20px;
-    word-wrap: break-word;
+#fact3{
     text-align: center;
-    margin-right:20px;
-    line-height: 1.6;
+    width: 275px;
+    max-height: 1000px;
+    border-radius: 4px;
+    background-color: rgba(255, 5, 5, .5);
+    padding:10px;
+    font-size: 21px;
 }
 
 html, body, div, span, object, iframe,
@@ -343,21 +313,73 @@ nav{
     padding-right:25px;
     padding-left:25px;
 }
-nav:hover{
-    
-    opacity:1;
-    background-color:black;
-    transition: all 1500ms;
-    
-}
-nav a{
-    text-decoration: none;
-    color: green;
-}
-nav a:hover{
-    color: white;
-}
 p{
     color: white;
+}
+homeNav1{
+    position: fixed;
+    left: 0%;
+    display: flex;
+    height: 100%;
+    top: 0%;
+    align-items: center;
+    color:yellow;
+    font-size: 30px;
+}
+homeNav1 trap1{
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left:65px solid rgb(21, 113, 252); 
+    height:400px;
+    z-index: -1;
+    cursor: pointer;
+    transition:all .5s;
+}
+homeNav1 trap1:hover{
+    height:500px;
+    border-left:65px solid rgb(21, 113, 252);
+}
+homeNav1 p{
+    width:20px;
+    word-wrap: break-word;
+    margin-left:-40px;
+    text-align: center;
+    line-height: 1.6;
+}
+homeNav2 {
+    top: 0%;
+    position: fixed;
+    right: 0px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color:yellow;
+    font-size: 30px;
+}
+homeNav2 trap2{
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right:65px solid rgb(21, 113, 252); 
+    height:400px;
+    margin-right:-40px;
+    z-index: -1;
+    cursor: pointer;
+    transition:all .5s;
+}
+homeNav2 trap2:hover{
+    border-right: 65px solid rgb(21, 113, 252);
+    height:500px;
+}
+homeNav2 p{
+    width:20px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-right:20px;
+    line-height: 1.6;
+}
+button{
+    background-color: transparent;
+    border:2px solid gray;
+    border-radius:3px;
 }
 /*# sourceMappingURL=maps/styles.css.map */
