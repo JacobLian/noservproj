@@ -1,20 +1,50 @@
 angular.module('noserv').service('service', function($http){
-    var animals = [
-        {
-    'species':'Orszarvú',
-    'strengths':'Erőségek: kiváló hallás és szaglás',
-    'weakness':'Gyengeségek: viszonzlag gyenge látásúak',
-    'family':'Utazás: Főleg magányosan találhatóak meg, társaságban csak párosodás alkalmával',
-    'habitat':'Élőhely: Füves területeken és nyílt szavannákon',
-    'video': 'https://www.youtube.com/embed/R02QrS2aCDM'
-},{
-    'species':'Vaddisznó',
-    'strengths':'Erőségek: Jól úsznak',
-    'weakness':'Gyengeségek: Többnyire lassú ügetéssel szaladnak',
-    'family':'Utazás: A vaddisznó családi közösségekben, csapatokban jár, ezt kondának nevezzük',
-    'habitat':'Élőhely: Csak a minden búvóhely nélküli, teljesen nyílt területeket és a hegyek magas részeit kerülik.',
-    'video':'https://www.youtube.com/embed/-CFtIKfYDv0'
-}];
+        var animals = [{
+                'species':'Rhinoceros',
+                'strengths':'Strengths: Extremely strong hearing and sense of smell',
+                'weakness':'Weakness: Very poor eyesight nearly blind',
+                'family':'Family: Rhinos travel alone unless it is mating season',
+                'habitat':'Habitat: Generally live in grassy areas or wide open Savannas',
+                'video': 'https://www.youtube.com/embed/R02QrS2aCDM'
+            },{
+                'species':'Wild Boar',
+                'strengths':'Strengths: Boars are suprisingly good swimmers and great at hiding',
+                'weakness':'Weakness: Extremely slow runners and must rely on brush and trees to hide',
+                'family':'Family: Wild boars are often found in packs as they mate alot and provide for their offspring',
+                'habitat':'Habitat: Boars will rarely come out in the open, they dwell mainly in mountains or foresty areas',
+                'video':'https://www.youtube.com/embed/-CFtIKfYDv0'
+            },{
+                'species':'Gorilla',
+                'strengths':'Strengths: Gorillas\'s muscles and skeleton are extremely robust and are able to soak up alot of pain before injury',
+                'weakness':'Weakness: Females are only able to produce 3 or 4 offspring in their lifetime leading to low population and difficulty to bounce back',
+                'family':'Family: Gorillas live in groups called troops. One male multiple female mates and the offspring',
+                'habitat':'Habitat: Mountain Gorillas dwell in volcanic areas with high vegetation. Lowland Gorillas live in forests',
+                'video':''
+            },{
+                'species':'Crocodile',
+                'strengths':'Strengths: Crocodiles have webbed feet which, allow them to make swift turns and sudden moves to attack prey',
+                'weakness':'Weakness: Females are only able to produce 3 or 4 offspring in their lifetime leading to low population and difficulty to bounce back',
+                'family':'Family: Gorillas live in groups called troops. One male multiple female mates and the offspring',
+                'habitat':'Habitat: Mountain Gorillas dwell in volcanic areas with high vegetation. Lowland Gorillas live in forests',
+                'video':''
+            }
+            ]
+//     var animals = [
+//         {
+//     'species':'Orszarvú',
+//     'strengths':'Erőségek: kiváló hallás és szaglás',
+//     'weakness':'Gyengeségek: viszonzlag gyenge látásúak',
+//     'family':'Utazás: Főleg magányosan találhatóak meg, társaságban csak párosodás alkalmával',
+//     'habitat':'Élőhely: Füves területeken és nyílt szavannákon',
+//     'video': 'https://www.youtube.com/embed/R02QrS2aCDM'
+// },{
+//     'species':'Vaddisznó',
+//     'strengths':'Erőségek: Jól úsznak',
+//     'weakness':'Gyengeségek: Többnyire lassú ügetéssel szaladnak',
+//     'family':'Utazás: A vaddisznó családi közösségekben, csapatokban jár, ezt kondának nevezzük',
+//     'habitat':'Élőhely: Csak a minden búvóhely nélküli, teljesen nyílt területeket és a hegyek magas részeit kerülik.',
+//     'video':'https://www.youtube.com/embed/-CFtIKfYDv0'
+// }];
 var facts = [
     'Gorillas can catch human colds and other illnesses',
     'Ostriches can run faster than horses, and the males can roar like lions', 

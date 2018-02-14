@@ -2,18 +2,9 @@ angular.module('noserv').controller('ctrl', function($scope, service){
 
         
         $scope.animals = service.getAnimals();
-        $scope.video = function(animal){
-        
-                // document.getElementById('videoPlayer').setAttribute('src', animal)
-                var cat = "https://www.youtube.com/embed/-CFtIKfYDv0"
-                var answer ='hello'
-                console.log(animal)
+        $scope.video = function(vid){
+                document.getElementById('videoPlayer').setAttribute('src', vid);
         }
-
-
-
-
-
         $scope.facts = function(){
                 var info = service.getFacts();
                 var a = document.getElementById('fact1')
