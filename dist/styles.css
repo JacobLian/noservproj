@@ -168,10 +168,10 @@
     color:white
 }
 .facts1{
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
-    margin-left:10%;
+    margin-left:5%;
     margin-top:5%;
 }
 .facts1 p{
@@ -184,15 +184,23 @@
     font-size: 23px;
 }
 .quoteButton{
+    position: absolute;
     width: 80%;
     display: flex;
     justify-content: center;
     margin-left:10%;
+    top:50%;
 }
 .quoteButton button{
     height: 50px;
     width: 100px;
-    background-color: white;
+    background-color: rgba(90, 255, 8, 0.959);
+    box-shadow: 0px 6px gray;
+    color: white;
+}
+.quoteButton button:active{
+    box-shadow: 0px 4px gray;
+    transform: translateY(2px);
 }
 .facts2{
     width: 80%;

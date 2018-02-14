@@ -12,6 +12,7 @@ angular.module('noserv').service('service', function($http){
                 'weakness':'Weakness: Extremely slow runners and must rely on brush and trees to hide',
                 'family':'Family: Wild boars are often found in packs as they mate alot and provide for their offspring',
                 'habitat':'Habitat: Boars will rarely come out in the open, they dwell mainly in mountains or foresty areas',
+                'fact':'',
                 'video':'https://www.youtube.com/embed/-CFtIKfYDv0'
             },{
                 'species':'Gorilla',
@@ -19,13 +20,31 @@ angular.module('noserv').service('service', function($http){
                 'weakness':'Weakness: Females are only able to produce 3 or 4 offspring in their lifetime leading to low population and difficulty to bounce back',
                 'family':'Family: Gorillas live in groups called troops. One male multiple female mates and the offspring',
                 'habitat':'Habitat: Mountain Gorillas dwell in volcanic areas with high vegetation. Lowland Gorillas live in forests',
+                'fact':'Gorillas have unique fingerprints like humans',
                 'video':''
             },{
                 'species':'Crocodile',
                 'strengths':'Strengths: Crocodiles have webbed feet which, allow them to make swift turns and sudden moves to attack prey',
-                'weakness':'Weakness: Females are only able to produce 3 or 4 offspring in their lifetime leading to low population and difficulty to bounce back',
-                'family':'Family: Gorillas live in groups called troops. One male multiple female mates and the offspring',
-                'habitat':'Habitat: Mountain Gorillas dwell in volcanic areas with high vegetation. Lowland Gorillas live in forests',
+                'weakness':'Weakness: If their mouth is closed due to rope or hands it is very difficult for them to open their mouth.',
+                'family':'Family: Though Crocodiles do not work together they sometimes group in areas with sun to relax and feed',
+                'habitat':'Habitat: All Crocodiles tend to be in freshwaters like rivers and lakes but sometimes dwell in saltwater',
+                'fact':'Crocodiles replace all of their 80 teeth up to 50 times in their 35-75 year lifespan',
+                'video':''
+            },{
+                'species':'Mountain Ram',
+                'strengths':'Strengths: Mountain Rams have excellent eyesight which help them to jump and see dangerous territory on the mountains',
+                'weakness':'Weakness: Rams give birth during spring and hide their newborns on high rocky ledges to avoid wolves and bears but leaves them vulnerable to birds like eagles',
+                'family':'Family: ',
+                'habitat':'Habitat: They live in rocky areas and boulders using their hooves which are rough to keep traction.',
+                'fact': 'Rams fight to decide who will be the dominant male in the group charging at each other as fast as 40 mph (64km/h)',
+                'video':''
+            },{
+                'species':'Tiger',
+                'strengths':'Strengths: Adside from teeth and claws Tigers have night vision that is 6 times stronger than humans to hunt at night',
+                'weakness':'Weakness: ',
+                'family':'Family: Once mature, Tigers spend most of their time alone living and hunting except for females when they raise offspring',
+                'habitat':'Tigers prefer dense areas like forests with access to water and plenty of prey',
+                'fact': 'Every tiger is unique, no two tigers have the same stripes',
                 'video':''
             }
             ]
