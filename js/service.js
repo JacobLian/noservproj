@@ -20,7 +20,7 @@ angular.module('noserv').service('service', function($http){
                 'weakness':'Weakness: Females are only able to produce 3 or 4 offspring in their lifetime leading to low population and difficulty to bounce back',
                 'family':'Family: Gorillas live in groups called troops. One male multiple female mates and the offspring',
                 'habitat':'Habitat: Mountain Gorillas dwell in volcanic areas with high vegetation. Lowland Gorillas live in forests',
-                'fact':'Gorillas have unique fingerprints like humans',
+                'fact':'Gorillas have unique Noseprints like humans have fingerprints',
                 'video':''
             },{
                 'species':'Crocodile',
@@ -31,7 +31,7 @@ angular.module('noserv').service('service', function($http){
                 'fact':'Crocodiles replace all of their 80 teeth up to 50 times in their 35-75 year lifespan',
                 'video':''
             },{
-                'species':'Mountain Ram',
+                'species':'Bighorn Sheep',
                 'strengths':'Strengths: Mountain Rams have excellent eyesight which help them to jump and see dangerous territory on the mountains',
                 'weakness':'Weakness: Rams give birth during spring and hide their newborns on high rocky ledges to avoid wolves and bears but leaves them vulnerable to birds like eagles',
                 'family':'Family: ',

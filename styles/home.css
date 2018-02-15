@@ -37,14 +37,15 @@
     top:50%;
 }
 .quoteButton button{
-    height: 50px;
-    width: 100px;
+    height: 60px;
+    width: 85px;
     background-color: rgba(90, 255, 8, 0.959);
-    box-shadow: 0px 6px gray;
+    box-shadow: 0px 6px rgba(253, 228, 228, 0.87);
     color: white;
+    font-size: 23px;
 }
 .quoteButton button:active{
-    box-shadow: 0px 4px gray;
+    box-shadow: 0px 4px rgba(192, 176, 176, 0.76);
     transform: translateY(2px);
 }
 .facts2{
