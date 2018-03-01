@@ -24,6 +24,12 @@ angular.module('noserv').controller('ctrl', function ($scope, service) {
         $scope.video = function (vid) {
                 document.getElementById('videoPlayer').setAttribute('src', vid);
         };
+        $scope.playAudio = function (sound) {
+                var audio = document.getElementById(sound);
+                audio.pause();
+                audio.currentTime = 0;
+                audio.play();
+        };
         $scope.facts = function () {
                 var info = service.getFacts();
                 var a = document.getElementById('fact1');

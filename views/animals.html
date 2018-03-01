@@ -14,7 +14,7 @@
             <p>{{animals[0].species}}</p>
             <img src="../assets/rhino.jpg">
             <p>What's my nose?</p>
-            <button onClick="play('rhino')"><i class="fas fa-volume-up"></i></button>
+            <button ng-click="playAudio('rhino')"><i class="fas fa-volume-up"></i></button>
         </div>
         <ul>{{animals[0].fact}}</ul>
         <ul>{{animals[0].strengths}}</ul>
@@ -26,7 +26,7 @@
         <div class="colChild">
             <p>{{animals[4].species}}</p><img src="../assets/ram.jpg">
             <p>I'm a Sheep?!</p>
-            <button onClick="play('sheep')"><i class="fas fa-volume-up"></i></button>
+            <button ng-click="playAudio('sheep')"><i class="fas fa-volume-up"></i></button>
         </div>
         <ul>{{animals[4].fact}}</ul>
         <ul>{{animals[4].strengths}}</ul>
@@ -38,7 +38,7 @@
         <div class="colChild">
             <p>{{animals[1].species}}</p><img src="../assets/boar.jpg">
             <p>Don't call me Pig!</p>
-            <button onClick="play('pig')"><i class="fas fa-volume-up"></i></button>
+            <button ng-click="playAudio('pig')"><i class="fas fa-volume-up"></i></button>
         </div>
         <ul>{{animals[1].fact}}</ul>
         <ul>{{animals[1].strengths}}</ul>
@@ -50,7 +50,7 @@
         <div class="colChild">
             <p>{{animals[2].species}}</p><img src="../assets/gorilla.jpg">
             <p>I eat more than Bananas</p>
-            <button onClick="play('gorilla')"><i class="fas fa-volume-up"></i></button>
+            <button ng-click="playAudio('gorilla')"><i class="fas fa-volume-up"></i></button>
         </div>
         <ul>{{animals[2].fact}}</ul>
         <ul>{{animals[2].strengths}}</ul>
@@ -63,7 +63,7 @@
         <div class="colChild">
             <p>{{animals[3].species}}</p><img src="../assets/crocodile.jpg">
             <p>Me hungry You Yummy</p>
-            <button onClick="play('crocodile')"><i class="fas fa-volume-up"></i></button>
+            <button ng-click="playAudio('crocodile')"><i class="fas fa-volume-up"></i></button>
         </div>
         <ul>{{animals[3].fact}}</ul>
         <ul>{{animals[3].strengths}}</ul>
@@ -75,7 +75,7 @@
         <div class="colChild">
             <p>{{animals[5].species}}</p><img src="../assets/tiger.jpg">
             <p>Night Time = Best Time</p>
-            <button onClick="play('tiger')"><i class="fas fa-volume-up"></i></button>
+            <button ng-click="playAudio('tiger')"><i class="fas fa-volume-up"></i></button>
         </div>
         <ul>{{animals[5].fact}}</ul>
         <ul>{{animals[5].strengths}}</ul>
@@ -98,12 +98,3 @@
 <audio id='crocodile' src="../assets/crocodile.wav"></audio>
 <audio id='tiger' src="../assets/tiger.wav"></audio>
 <audio id='gorilla' src="../assets/gorilla.wav"></audio>
-
-<script>
-var play = function(x){
-       var audio = document.getElementById(x);
-       audio.pause();
-       audio.currentTime = 0;
-       audio.play();
- }
-</script>
