@@ -41,7 +41,7 @@
     margin:20px;
 }
 .col p{font-size: 25px; padding-top:5px; padding-bottom:10px;}
-.col ul{font-size:18px; margin-left: 20px; margin-top: 5px; padding-bottom:5px;}
+.col ul{font-size:18px; margin-left: 20px; margin-top: 5px; padding-bottom:5px; width: 310px;}
 .col:hover{max-height:1000px;}
 .colChild{text-align: center;}
 .colChild img{height: 220px; width:290px;}
@@ -57,43 +57,6 @@
     color: black;
     font-size: 25px;
 }
-/* #rhinodialog{
-   position: absolute;
-    display:none;
-    font-size:20px;
-    background-color:orange;
-    border: 3px solid black;
-    padding:10px 10px 10px 10px;
-    color: black;
-    border-radius:10px;
-} */
-/* #rhinodialog h2{
-    color: black;
-}
-#rhinodialog p{
-     width: 500px;
-    word-wrap: break-word;
-   
-}
-#boardialog{
-    position: absolute;
-    display:none;
-    font-size:20px;
-    background-color: gray;
-    border: 3px solid black;
-    padding:10px 10px 10px 10px;
-    color: black;
-    border-radius: 10px;
-}
-#boardialog h2{
-    color: black;
-}
-
-#boardialog p{
-    width:500px;
-    word-wrap: break-word;
-} */
-
 /* .arena{
     background-image: url('https://source.unsplash.com/MfVTOmc6LcY');
     background-size:cover;
