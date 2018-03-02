@@ -61,16 +61,16 @@ angular.module('noserv').controller('ctrl', function ($scope, service) {
 angular.module('noserv').service('service', function ($http) {
     var animals = [{
         'species': 'Rhinoceros',
-        'strengths': 'Extremely strong hearing and sense of smell',
-        'weakness': 'Very poor eyesight nearly blind',
-        'family': 'Rhinos travel alone unless it is mating season',
-        'habitat': 'Generally live in grassy areas or wide open Savannas',
+        'strengths': 'Rhinos have extremely strong hearing and sense of smell able to hold their ground with their horn as a weapon',
+        'weakness': 'Due to poor eyesight Rhinos allow birds to relax and eat bugs on them to alert the rhino of danger',
+        'family': 'Mother rhinos stay with their young up to 3 years while the males are more solitary',
+        'habitat': 'Depending on the type of rhino they live in grassy areas or savannas',
         'video': 'https://www.youtube.com/embed/R02QrS2aCDM'
     }, {
         'species': 'Wild Boar',
         'strengths': 'Boars are suprisingly good swimmers and great at hiding',
-        'weakness': 'Extremely slow runners and must rely on brush and trees to hide',
-        'family': 'Wild boars are often found in packs as they mate alot and provide for their offspring',
+        'weakness': 'Wild Boars are Extremely slow runners and must rely on brush and trees to hide from predators to survive',
+        'family': 'They are often found in packs as they mate often and provide for their offspring which is not often seen in nature',
         'habitat': 'Boars will rarely come out in the open, they dwell mainly in mountains or foresty areas',
         'fact': '',
         'video': 'https://www.youtube.com/embed/-CFtIKfYDv0'
@@ -79,7 +79,7 @@ angular.module('noserv').service('service', function ($http) {
         'strengths': 'Gorillas\'s muscles and skeleton are extremely robust and are able to soak up alot of pain before injury',
         'weakness': 'Females are only able to produce 3 or 4 offspring in their lifetime leading to low population and difficulty to bounce back',
         'family': 'Gorillas live in groups called troops. One male multiple female mates and the offspring',
-        'habitat': 'Mountain Gorillas dwell in volcanic areas with high vegetation. Lowland Gorillas live in forests',
+        'habitat': 'Mountain Gorillas dwell in volcanic areas with high vegetation. Lowland Gorillas live in lush forests',
         'fact': 'Gorillas have unique Noseprints like humans have fingerprints',
         'video': ''
     }, {
@@ -91,7 +91,7 @@ angular.module('noserv').service('service', function ($http) {
         'fact': 'Crocodiles replace all of their 80 teeth up to 50 times in their 35-75 year lifespan',
         'video': ''
     }, {
-        'species': 'Mountain Rams',
+        'species': 'Mountain Ram',
         'strengths': 'Mountain Rams have excellent eyesight which help them to navigate dangerous territory on the mountains',
         'weakness': 'Rams give birth during spring and hide their newborns on high rocky ledges to avoid predators',
         'family': '',
@@ -100,11 +100,11 @@ angular.module('noserv').service('service', function ($http) {
         'video': ''
     }, {
         'species': 'Tiger',
-        'strengths': 'Adside from teeth and claws Tigers have night vision that is 6 times stronger than humans to hunt at night',
+        'strengths': 'Aside from teeth and claws Tigers have night vision that is 6 times stronger than humans to hunt at night',
         'weakness': '',
         'family': 'Once mature, Tigers spend most of their time alone living and hunting except for females when they raise offspring',
         'habitat': 'Tigers prefer dense areas like forests with access to water and plenty of prey',
-        'fact': 'Every tiger is unique, no two tigers have the same stripes',
+        'fact': 'Every tiger is unique, no two tigers have the same stripe design',
         'video': ''
     }];
     //     var animals = [
