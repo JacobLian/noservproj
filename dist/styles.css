@@ -190,6 +190,11 @@
     margin-left:10%;
 
 }
+.quoteButton button{
+    background-color: var(--anicolor3);
+    font-size: 20px;
+    color: white;
+}
 .facts2{
     width: 80%;
     display: flex;
@@ -386,7 +391,7 @@ homeNav2 p{
 }
 button{
     background-color: transparent;
-    border:2px solid gray;
+    border:2px solid white;
     border-radius:3px;
 }
 /*# sourceMappingURL=maps/styles.css.map */
