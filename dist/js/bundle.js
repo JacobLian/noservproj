@@ -21,13 +21,15 @@ angular.module('noserv', ['ui.router']).config(function ($stateProvider, $urlRou
 angular.module('noserv').controller('ctrl', function ($scope, service) {
 
         $scope.animals = service.getAnimals();
-        $scope.video = function (animal) {
-
-                // document.getElementById('videoPlayer').setAttribute('src', animal)
-                var answer = 'hello';
-                console.log(animal);
+        $scope.video = function (vid) {
+                document.getElementById('videoPlayer').setAttribute('src', vid);
         };
-
+        $scope.playAudio = function (sound) {
+                var audio = document.getElementById(sound);
+                audio.pause();
+                audio.currentTime = 0;
+                audio.play();
+        };
         $scope.facts = function () {
                 var info = service.getFacts();
                 var a = document.getElementById('fact1');
@@ -54,63 +56,56 @@ angular.module('noserv').controller('ctrl', function ($scope, service) {
         //         console.log(response);
         // })
 });
-// angular.module('noserv').directive('directive', function () {
-//     return {
-//         restrict: 'A',
-//         link: function (scope, element, attribute) {
-//             scope.$$postDigest(function () {
-//                 $('#addBoar').click(function () {
-//                     $('#aImage').html('<img src="../assets/boarf.gif">')
-//                 });
-
-//                 $('#addRhino').click(function () {
-//                     $('#aImage').html('<img src="../assets/rhinof.gif">')
-//                 });
-
-//                 $('#clear').click(function () {
-//                     $('#aImage').html('')
-//                 });
-
-//                 $('#addBoar2').click(function () {
-//                     $('#bImage').html('<img src="../assets/boarf.gif">')
-//                 });
-
-//                 $('#addRhino2').click(function () {
-//                     $('#bImage').html('<img src="../assets/rhinof.gif">')
-//                 });
-//                 $('#clear2').click(function () {
-//                     $('#bImage').html('')
-//                 });
-
-
-//                 $('#fight').click(function () {
-//                     $('#bImage').append(' GYŐZELEM ');
-//                     $('#aImage').append(' VERESÉG ');
-//                 });
-//             })
-
-
-//         }
-//     }
-// })
-"use strict";
 'use strict';
 
 angular.module('noserv').service('service', function ($http) {
     var animals = [{
         'species': 'Rhinoceros',
-        'strengths': 'Strengths: Extremely strong hearing and sense of smell',
-        'weakness': 'Weakness: Very poor eyesight nearly blind',
-        'family': 'Travel: Rhinos travel alone unless it is mating season',
-        'habitat': 'Habitat: Generally live in grassy areas or wide open Savannas',
+        'strengths': 'Rhinos have extremely strong hearing and sense of smell able to hold their ground with their horn as a weapon',
+        'weakness': 'Due to poor eyesight Rhinos allow birds to relax and eat bugs on them to alert the rhino of danger',
+        'family': 'Mother rhinos stay with their young up to 3 years while the males are more solitary',
+        'habitat': 'Depending on the type of rhino they live in grassy areas or savannas',
         'video': 'https://www.youtube.com/embed/R02QrS2aCDM'
     }, {
         'species': 'Wild Boar',
-        'strengths': 'Strengths: Boars are suprisingly good swimmers and great at hiding',
-        'weakness': 'Weakness: Extremely slow runners and must rely on brush and trees to hide',
-        'family': 'Wild boars are often found in packs as they mate alot and provide for their offspring',
-        'habitat': 'Habitat: Boars will rarely come out in the open, they dwell mainly in mountains or foresty areas',
+        'strengths': 'Boars are suprisingly good swimmers and great at hiding',
+        'weakness': 'Wild Boars are Extremely slow runners and must rely on brush and trees to hide from predators to survive',
+        'family': 'They are often found in packs as they mate often and provide for their offspring which is not often seen in nature',
+        'habitat': 'Boars will rarely come out in the open, they dwell mainly in mountains or foresty areas',
+        'fact': '',
         'video': 'https://www.youtube.com/embed/-CFtIKfYDv0'
+    }, {
+        'species': 'Gorilla',
+        'strengths': 'Gorillas\'s muscles and skeleton are extremely robust and are able to soak up alot of pain before injury',
+        'weakness': 'Females are only able to produce 3 or 4 offspring in their lifetime leading to low population and difficulty to bounce back',
+        'family': 'Gorillas live in groups called troops. One male multiple female mates and the offspring',
+        'habitat': 'Mountain Gorillas dwell in volcanic areas with high vegetation. Lowland Gorillas live in lush forests',
+        'fact': 'Gorillas have unique Noseprints like humans have fingerprints',
+        'video': ''
+    }, {
+        'species': 'Crocodile',
+        'strengths': 'Crocodiles have webbed feet which, allow them to make swift turns and sudden moves to attack prey',
+        'weakness': 'If their mouth is closed due to rope or hands it is very difficult for them to open their mouth.',
+        'family': 'Though Crocodiles do not work together they sometimes group in areas with sun to relax and feed',
+        'habitat': 'All Crocodiles tend to be in freshwaters like rivers and lakes but sometimes dwell in saltwater',
+        'fact': 'Crocodiles replace all of their 80 teeth up to 50 times in their 35-75 year lifespan',
+        'video': ''
+    }, {
+        'species': 'Mountain Ram',
+        'strengths': 'Mountain Rams have excellent eyesight which help them to navigate dangerous territory on the mountains',
+        'weakness': 'Rams give birth during spring and hide their newborns on high rocky ledges to avoid predators',
+        'family': '',
+        'habitat': 'They live in rocky areas and boulders using their hooves which are rough to keep traction.',
+        'fact': 'Rams fight to decide who will be the dominant male in the group charging at each other up to 40 mph (64km/h)',
+        'video': ''
+    }, {
+        'species': 'Tiger',
+        'strengths': 'Aside from teeth and claws Tigers have night vision that is 6 times stronger than humans to hunt at night',
+        'weakness': '',
+        'family': 'Once mature, Tigers spend most of their time alone living and hunting except for females when they raise offspring',
+        'habitat': 'Tigers prefer dense areas like forests with access to water and plenty of prey',
+        'fact': 'Every tiger is unique, no two tigers have the same stripe design',
+        'video': ''
     }];
     //     var animals = [
     //         {
