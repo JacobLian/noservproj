@@ -153,7 +153,7 @@
     display: flex;
     justify-content: center;
     margin-left:10%;
-    top:50%;
+    top:40%;
 }
 .quoteButton button{
     height: 60px;
@@ -167,11 +167,6 @@
 .quoteButton button:active{
     box-shadow: 0px 4px rgba(192, 176, 176, 0.76);
     transform: translateY(2px);
-}
-.quoteButton button{
-    background-color: var(--anicolor3);
-    font-size: 20px;
-    color: white;
 }
 .facts2{
     width: 80%;
@@ -381,6 +376,16 @@ button{
     flex-direction: column;
     align-items:center;
     z-index: -2;
+}
+.vidmenu{
+    margin-top: 10px;
+}
+.vidmenu button{
+    cursor: pointer;
+    font-size: 20px;
+    padding:5px;
+    margin-right:8px;
+    color: white;
 }
 @media(min-width:1150px) {
     #videoPlayer{
